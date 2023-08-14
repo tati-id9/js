@@ -13,11 +13,10 @@
 
 const сelsius = Number.parseFloat(
     prompt("Введите температуру в градусах Цельсия:"));
-alert(`Цельсий: ${сelsius}, Фаренгейт: ${farengeit(сelsius).toFixed(2)}`);
+alert(`Цельсий: ${сelsius}, Фаренгейт: ${celsiusToFahrenheit(сelsius).toFixed(2)}`);
 
-function farengeit(degrees) {
-    const fahrenheit = (9 / 5) * degrees + 32;
-    return fahrenheit;
+function celsiusToFahrenheit(degrees) {
+    return (9 / 5) * degrees + 32;
 }
 
 /*
