@@ -32,7 +32,7 @@ let test = confirm("У вас много денег?");
     }
 */
 
-(confirm("У вас много денег?")) ? console.log("Скоро будем у вас ;)")
+confirm("У вас много денег?") ? console.log("Скоро будем у вас ;)")
   : console.log("До свидания.");
 
 /* 3
@@ -50,9 +50,9 @@ let test = confirm("У вас много денег?");
 */
 
 const dayNumber = Number.parseInt(prompt('Введите целое число'));
-let decade;
 
 if (dayNumber >= 1 && dayNumber < 32) {
+  let decade;
   if (dayNumber <= 10) {
     decade = 1;
   } else if (dayNumber > 10 && dayNumber <= 20) {
